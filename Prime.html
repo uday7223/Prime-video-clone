@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Prime video</title>
+    <style>
+        :root{
+            --but-bag:  #0F79AF; 
+            --but-rad : 4px;
+
+
+        }
+        @font-face {
+            font-family: udaySansPro;
+            src: url(../fonts/SourceSansPro-Light.ttf);
+        }
+
+        *{
+            padding:0;
+            margin: 0 ;
+            font-family: "Amazon Ember", "Amazon Arabic Ember", Arial, sans-serif;
+        }
+        .bg1{
+            
+            height:100vh;
+            width: 100%;
+            background-image:
+          linear-gradient(
+            to right,
+            #000 40%,
+            transparent 58%
+          ),
+                url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+                background-position: right top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #000;
+            }
+
+            ul{
+                background-color: #000;
+                padding-left: 50px;
+
+            }
+        li{
+            display: inline-block;
+            color: white;
+            display: inline-block;
+            font-size: 20px;
+            /* margin: 0px; */
+            transition: transform 0.3s ease; /* Smooth transition effect */
+            align-items: center;
+            height: 100%;
+            margin-right: 20px;
+            margin-bottom: 10px;
+           
+        }
+
+        li:hover{
+        transform: scale(1.05);
+
+    }
+
+        .logo{
+            margin-left: 230px;
+        }
+
+        .bg2{
+            height: 100vh;
+            width: 100%;
+            background-image:
+          linear-gradient(
+            to right,
+            #000 40%,
+            transparent 58%
+          ),
+          url(../pictures/bg2.jpg);
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
+        }
+
+        .bg3{
+            height: 100vh;
+            width: 100%;
+            background-position: right top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+        }
+
+        .bg4{
+            height: 100vh;
+            width: 100%;
+            background-image:
+         
+          url(../pictures/bg3.jpg);
+        background-position: right top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #000;
+    ;
+        }
+        .footer{
+            height: 20vh;
+            background-color: #222222;
+            text-align: center;
+
+        }
+
+        .nav, .nav1, .nav2{
+            display: inline;
+            
+        }
+
+        .nav1, .nav2{
+            margin-left: 55px;
+        }
+
+        
+
+        
+
+        .container{
+            color: white;
+            padding-top: 40px;
+            padding-left: 45px;
+        }
+
+        h1{
+            font-size: 44.8px;
+            line-height: 2.8rem;
+            text-rendering: optimizeLegibility;
+            font-family: udaySansPro;
+            font-weight: 100;
+            padding-bottom: 28px;
+        }
+
+        p{
+            font-size: 24px;
+            font-weight:500;
+            font-family: udaySansPro;
+            padding-bottom: 28px;
+
+
+
+        }
+
+    button{
+        background-color: var(--but-bag);
+        border-radius: var(--but-rad);
+        height: 48px;
+        width: 280px;
+        padding:14px 20px;
+        font-size:15px;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+
+    .tabdata{
+        padding-right: 400px;
+        padding-top: 10px;
+        width: 350px;
+        float: right;
+    }
+    td{
+        padding: 3px;
+        padding-bottom:0px;
+       
+
+    }
+
+    img[alt="a"]{
+          width: 230px;
+        height: 160px;
+        transition: transform 0.3s ease;
+       
+    }
+
+    img[alt="a"]:hover{
+        transform: scale(1);
+        box-shadow:2px 2px 15px 5px black ;
+
+    }
+
+    .con3{
+        width:30%;
+        float:left;
+    }
+
+    .con4{
+        height:400px;
+        width: 750px;
+        margin-left: auto;
+    }
+
+    #footerP{
+        padding:0px;
+        color: #1473A2;
+        font-size:20px;
+        padding-bottom: 10px;padding-top: 10px;
+
+
+    }
+
+    .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+   
+        
+
+       
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li class="logo"><img src="../pictures/logo.png" style="width: 96px; height: 18px;"></li>
+             
+                <div class="nav1">
+                    <div class="dropdown"><span>  <li>Home <i class="fa-solid fa-angle-down"></i> </li></span>
+                        <div class="dropdown-content">
+                            <p>All</p>
+                            <p>Movies</p>
+                            <p>Tv Shows</p>
+                            </div>
+                        
+                    </div>
+                    
+                    <li>Store <i class="fa-solid fa-angle-down"></i></li>
+                    <li>Live Tv</li>
+                    <li>Categories <i class="fa-solid fa-angle-down"></i></li>
+                </div>
+
+
+                <div class="nav2"><li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li>Try for free</li>
+                    <li>EN <i class="fa-solid fa-angle-down"></i></li>
+                    <li class="imglogo"> <img src="./ProfileIcon.png" style="height: 30px;" class="imgLogo"></li>
+                    </div>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="bg1">
+        <div class="container">
+            <h1>Welcome to Prime Video</h1>
+            <p>Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+            <form>
+                <button><span>Sign in to join Prime</span></button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="bg2"> 
+        <div class="container">
+                <h1>Movie rentals on Prime Video</h1>
+                <p>Early Access to new movies, before digital subscription
+
+                </p>
+                <form>
+                    <button><span>Rent now</span></button>
+                </form>
+       </div>
+    </div>
+
+    <div class="bg3">
+        <div class="container con3" style="color: black;">
+            <h1>Your favorite channels all in one place</h1>
+            <p>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice</p>
+           </div>
+
+        <div class="tabdata">
+            <table>
+                <tr>
+                    <td><img src="../pictures/img1.png" alt="a"></td>
+                    <td><img src="../pictures/img2.jpg" alt="a"></td>
+                    <td><img src="../pictures/img3.png" alt="a"></td>
+                </tr>
+                <tr>
+                    <td><img src="../pictures/img4.png" alt="a"></td>
+                    <td><img src="../pictures/img5.jpg" alt="a"></td>
+                    <td><img src="../pictures/img6.jpg" alt="a"></td>
+                </tr>
+                <tr>
+                    <td><img src="../pictures/img7.jpg" alt="a"></td>
+                    <td><img src="../pictures/img8.jpg" alt="a"></td>
+                    <td><img src="../pictures/img9.jpg" alt="a"></td>
+                </tr>
+                <tr>
+                    <td><img src="../pictures/img10.jpg" alt="a"></td>
+                    <td><img src="../pictures/img11.png" alt="a"></td>
+                    <td><img src="../pictures/img12.png" alt="a"></td>
+                </tr>
+            </table>
+        </div>
+           
+    </div>
+
+    <div class="bg4">
+        <div class="container con4">
+            <h1>Even better with Fire TV Stick</h1>
+            <p>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.
+            </p>
+            <form>
+                <button><span>Get Started</span></button>
+            </form>
+   </div>
+    </div>
+
+    <div class="footer">
+        <img src="../pictures/footerLogo.png" alt="footerimg" style="padding-top: 20px;">
+        <p id="footerP">Terms and Privacy Notice &nbsp;&nbsp;&nbsp;&nbsp;Send us feedback&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
+        <p style="color:slategray; font-size:18px">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+
+    </div>
+    
+</body>
+</html>
